@@ -63,7 +63,7 @@ vy = config.vy
 
 cords = np.array([x,y,vx,vy])
 
-time = np.linspace(0, 6.3259, 1001, endpoint=True)
+time = np.linspace(0, 2*6.3259, 2*1001, endpoint=True)
 dt = time[1] - time[0]
 
 X = np.zeros((3, len(time)))
@@ -81,8 +81,8 @@ for _ in range(len(time)):
 #plotting
 fig, ax = plt.subplots(figsize=(10, 4))
 
-ax.set_xlim(-5.1, 5.1)
-ax.set_ylim(-5.1, 5.1)
+ax.set_xlim(-10.1, 10.1)
+ax.set_ylim(-10.1, 10.1)
 ax.set_aspect('equal')
 ax.grid(True, alpha=0.5)
 ax.minorticks_on()
