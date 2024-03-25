@@ -40,7 +40,8 @@ def step(cor, mass, dt, G):
      return cor
 
 #init
-m = np.array([2, 1, 2])
+#currently, the values are based on https://arxiv.org/pdf/math/0011268.pdf
+m = np.array([1, 1, 1])
 x = np.array([-0.97000436, 0.0, 0.97000436])
 y = np.array([0.24208753, 0.0, -0.24208753])
 vx = np.array([0.4662036850, -0.933240737, 0.4662036850])
