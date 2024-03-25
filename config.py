@@ -8,7 +8,7 @@ vx = np.array([0, 0, 0])
 vy = np.array([-3.5, 0, 3.5])
 
 
-#the values are based on https://arxiv.org/pdf/math/0011268.pdf
+#the values are based on https://arxiv.org/pdf/math/0011268.pdf for the stable 3 body 8 shape
 #m = np.array([1, 1, 1])
 #x = np.array([-0.97000436, 0.0, 0.97000436])
 #y = np.array([0.24208753, 0.0, -0.24208753])
