@@ -2,6 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+import config
 
 # helper function
 def r(cor, mass, G):
@@ -19,7 +20,7 @@ def r(cor, mass, G):
                 sep = math.sqrt((X[n] - X[i])**2 + (Y[n] - Y[i])**2)
                 dvx -= (G * mass[i] * (X[n] - X[i])) / sep**3
                 dvy -= (G * mass[i] * (Y[n] - Y[i])) / sep**3
-                
+
         delt[2][n] = dvx
         delt[3][n] = dvy
         
@@ -40,12 +41,11 @@ def step(cor, mass, dt, G):
      return cor
 
 #init
-#currently, the values are based on https://arxiv.org/pdf/math/0011268.pdf
-m = np.array([1, 1, 1])
-x = np.array([-0.97000436, 0.0, 0.97000436])
-y = np.array([0.24208753, 0.0, -0.24208753])
-vx = np.array([0.4662036850, -0.933240737, 0.4662036850])
-vy = np.array([0.4323657300, -0.86473146, 0.4323657300])
+m = config.m
+x = config.x
+y = config.y
+vx = config.vx
+vy = config.vy
 
 cords = np.array([x,y,vx,vy])
 
@@ -67,8 +67,8 @@ for _ in range(len(time)):
 #plotting
 fig, ax = plt.subplots(figsize=(10, 4))
 
-ax.set_xlim(-2.1, 2.1)
-ax.set_ylim(-2.4, 2.4)
+ax.set_xlim(-5.1, 5.1)
+ax.set_ylim(-5.1, 5.1)
 ax.set_aspect('equal')
 ax.grid(True, alpha=0.5)
 ax.minorticks_on()
