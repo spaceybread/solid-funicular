@@ -47,3 +47,11 @@ vy = np.array([-3.5, 0, 3.5])
 #y = np.array([0, 0.0, 0])
 #vx = np.array([-2.2, 0.1, 1.5])
 #vy = np.array([0, 4, 0])
+
+#config 6: collision test
+#m = np.array([1, 1, 1])
+#x = np.array([-1, 0, 1])
+#y = np.array([1, 0, 1])
+#vx = np.array([0, 0, 0])
+#vy = np.array([0, 0, 0])
+
