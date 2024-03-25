@@ -7,3 +7,6 @@
 [Animation](https://youtube.com/shorts/Ish9KoGRiNs?feature=share)
 
 Uses Numpy and Matplotlib
+
+![8plot](https://github.com/spaceybread/solid-funicular/blob/main/sims/8plot.gif)
+![8plot](https://github.com/spaceybread/solid-funicular/blob/main/sims/orbits.gif)
