@@ -40,3 +40,10 @@ vy = np.array([-3.5, 0, 3.5])
 #y = np.array([0, 0.0, 0])
 #vx = np.array([0, 0, 0])
 #vy = np.array([2.5, 0, 0.5])
+
+#config 5
+#m = np.array([10, 4, 10])
+#x = np.array([-1.2, 0.0, 1.2])
+#y = np.array([0, 0.0, 0])
+#vx = np.array([-2.2, 0.1, 1.5])
+#vy = np.array([0, 4, 0])
