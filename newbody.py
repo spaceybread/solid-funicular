@@ -4,6 +4,18 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import config
 
+# sep check function
+def sp(cor):
+    X = np.array(cor[0])
+    Y = np.array(cor[1])
+    for n in range(len(X)):
+        for i in range(len(X)):
+            if n != i:
+                sep = math.sqrt((X[n] - X[i])**2 + (Y[n] - Y[i])**2)
+                if sep < 0.09:
+                    return True
+    return False
+    
 # helper function
 def r(cor, mass, G):
     X = np.array(cor[0])
@@ -31,6 +43,8 @@ def r(cor, mass, G):
 
 #step function
 def step(cor, mass, dt, G):
+     if sp(cor) == True: # if the objects collide, the simulation stops
+        return cor
      k1 = dt * r(cor, mass, G)
      k2 = dt * r(cor + k1/2, mass, G)
      k3 = dt * r(cor + k2/2, mass, G)
